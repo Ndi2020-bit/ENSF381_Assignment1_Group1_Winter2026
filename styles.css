@@ -107,6 +107,7 @@ select {
     background-color: #f9e2c8;
     padding: 15px;
     border-top: 5px solid #e4b48c;
+    margin-bottom: 0;
 }
 
 
@@ -204,4 +205,11 @@ select {
 
 .finish-button:hover {
     box-shadow: 1px 4px 10px rgba(213, 131, 131, 0.923);
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
