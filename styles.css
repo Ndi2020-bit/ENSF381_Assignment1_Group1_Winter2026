@@ -1,54 +1,361 @@
-header {
-    background-color: #f9e2c8;
+/* General Body Setup */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centers the Main container horizontally */
 }
 
-.flex-container {
+/* Header Styles */
+header {
     display: flex;
     align-items: center;
-    gap: 10px;
+    background-color: #f9e2c8;
     padding: 15px 30px;
+    gap: 10px;
     border-bottom: 3px solid #e4b48c;
+    width: 100%;
+    /* Ensures header spans full width */
+    box-sizing: border-box;
 }
+
+header img {
+    height: 50px;
+    /* Adjust based on your logo size */
+}
+
+/* Navigation Bar Styles */
 .navbar {
-    background-color: #fff3e0;  
-    justify-content: center; 
-    padding: 10px ;
-     display: flex;
-     border-bottom: 3px solid #e4b48c;
+    background-color: #fff3e0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 3px solid #e4b48c;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .navbar a {
     text-decoration: none;
     color: brown;
     background-color: #f28c8c;
-    margin: 0px 10px;
-    border-radius: 12px;
-    text-decoration: none;
-    padding: 8px 15px;
     font-weight: bold;
+    padding: 8px 15px;
+    margin: 0 10px;
+    border-radius: 12px;
 }
-body{
+
+/* Main Content Styles */
+main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-main {
-   background-color: #fff8ee;
-   border-radius: 25px;
-   padding: 25px;
-  
+    align-items: center;
     max-width: 1100px;
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 25px;
+    margin: 0 auto;
 }
 
 section {
-    text-align: center;
-    margin-bottom: 40px; 
-    }
+    background-color: #fff8ee;
+    border-radius: 25px;
+    padding: 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
 
+/* Target the Featured Flavors section specifically to make it a square */
+.featured-box {
+    max-width: 400px;
+    /* Adjust this number to get the perfect square look */
+    text-align: left;
+    /* Keeps the list items aligned nicely */
+}
+
+/* Ensure the heading inside the square box is still centered */
+.featured-box h2 {
+    text-align: center;
+}
+
+section h2 {
+    text-align: center;
+}
+
+/* Footer Styles */
 footer {
     background-color: #f9e2c8;
     text-align: center;
     padding: 15px;
-    border-top: solid 3px #e4b48c;
+    border-top: 3px solid #e4b48c;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Login Page Specific Styles */
+.login-container {
+    padding: 20px;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 70px;
+    /* Spacing between form and footer */
+}
+
+/* Input Fields styling */
+.login-input {
+    background-color: #fff8ee;
+    border: 1px solid #e4b48c;
+    padding: 5px;
+}
+
+/* Login Button styling */
+.login-btn {
+    background-color: #f28c8c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 14px;
+    cursor: pointer;
+    /* Changes cursor to pointer on hover */
+}
+
+/* Menu Page Styles */
+.menu-container {
+    text-align: center;
+    max-width: 1100px;
+    padding: 20px;
+}
+
+.dropdown-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.season-dropdown {
+    background-color: #fff8ee;
+    border-radius: 10px;
+    padding: 6px 10px;
+    border: 2px solid #e4b48c;
+}
+
+.menu-box {
+    background-color: #fff8ee;
+    /* soft pink */
+    padding: 30px;
+    border-radius: 25px;
+    max-width: 1100px;
+    margin: 40px auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Tile Grid and Individual Tiles */
+.tile-grid {
+    text-align: left;
+}
+
+.ice-cream-tile {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #ffffff;
+    border-radius: 20px;
+    /* Assignment says border 20px, likely meant radius */
+    padding: 15px;
+    margin: 15px;
+    width: 250px;
+    /* Fixed width to help 3-per-row layout */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+/* Links and Buttons */
+.custom-link,
+.add-btn,
+.remove-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 8px 14px;
+    cursor: pointer;
+    border: none;
+}
+
+.custom-link,
+.add-btn {
+    background-color: #f28c8c;
+    color: white;
+}
+
+.remove-btn {
+    background-color: #c94c4c;
+    color: white;
+}
+
+.custom-link:hover,
+.add-btn:hover,
+.remove-btn:hover {
+    opacity: 0.9;
+}
+
+/* Banner Image Styles */
+.banner-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.banner-image {
+    max-width: 20%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Form Styles */
+.order-form {
+    background-color: #fff8ee;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.order-form h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+}
+
+.order-form p {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.order-form label {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.order-form input[type="radio"],
+.order-form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Submit Selection Button */
+.submit-btn {
+    background-color: #f28c8c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 14px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+/* Finish Order Button */
+.finish-order-btn {
+    display: inline-block;
+    background-color: #f28c8c;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.finish-order-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* Order Summary Page Styles */
+.summary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.summary-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Order Summary Table Styles */
+.order-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #fff8ee;
+    margin: 0 auto 30px auto;
+    text-align: left;
+}
+
+.order-table td {
+    padding: 10px 15px;
+    border: 1px solid black;
+}
+
+.order-table tr:nth-child(odd) {
+    background-color: #fff8ee;
+}
+
+.order-table tr:nth-child(even) {
+    background-color: #fffbf5;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Edit Order Button */
+.edit-btn,
+.confirm-btn {
+    background-color: #f28c8c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 14px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.edit-btn:hover,
+.confirm-btn:hover {
+    opacity: 0.9;
 }
