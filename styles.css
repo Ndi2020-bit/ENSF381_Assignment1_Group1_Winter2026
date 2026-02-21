@@ -277,8 +277,14 @@ form {
     flex-direction: column;
     align-items: center;
     margin-bottom: 15px;
-}/*
+}*/
 
+.checkbox-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+}
 
 /* Submit Selection Button */
 .submit-btn {
